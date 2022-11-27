@@ -57,7 +57,7 @@ const options = {
       startBtn.disabled = true;
       datePickerEl.disabled = true;
 
-      timerId = setInterval(() => {
+      let timerId = setInterval(() => {
         let timerValues = convertMs(chosenDate - Date.parse(new Date()));
 
         secodsEl.textContent = addLeadingZero(timerValues.seconds);
